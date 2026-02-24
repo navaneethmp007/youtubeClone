@@ -1,0 +1,135 @@
+.header{
+    height:55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom-width:1px ;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(223, 222, 222); 
+    z-index: 100;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.hambuger {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.youtube-logo {
+    height:20px;
+}
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 34px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.search-bar{
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(166, 164, 164);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0px;
+}
+.search-bar::placeholder{
+    font-family: Roboto,airal;
+    font-size: 16px;
+}
+.searchicon{
+    height: 25px;
+    margin-top: 4px;
+}
+.right-section{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.searchbutton{
+    height:40px;
+    width:66px;
+    background-color: rgb(239, 237, 237);
+   border: 1px solid  rgb(166, 164, 164);
+    margin-left: -1px;
+    margin-right: 10px;
+    position: relative;
+}
+.voicesearchbutton{
+height:40px;
+width:40px;
+border-radius: 20px;
+border: none;
+background-color:  rgb(239, 237, 237);
+position: relative;
+}
+.voice-search-icon{
+    height:26px;
+    margin-top: 4px;
+}
+.uploadbuttom{
+    height:24px;
+}
+.youtube-app{
+    height:24px;
+}
+.notifications{
+    height:24px;
+}
+.channel{
+    height:32px;
+    border-radius: 16px;
+}
+.notification-container{
+    position:relative;
+}
+.notification-count{
+    top: -2px;  
+    right: -4px;
+    background-color: rgb(152, 26, 26);
+    color: white;
+    font-family: Airal;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    position: absolute;
+}
+.searchbutton .tooltip,
+.voicesearchbutton .tooltip{
+    position: absolute;
+   background-color: rgb(200, 200, 200) ;
+   color: white;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.searchbutton:hover .tooltip ,
+.voicesearchbutton:hover .tooltip{
+    opacity:1;
+}
